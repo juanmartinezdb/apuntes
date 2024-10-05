@@ -7,6 +7,7 @@
 - `git push -u origin main`
 ### Clonar
 - `git clone direccionURL`
+
 ## Configuración Inicial
 
 Inicializa un nuevo repositorio Git en el directorio actual.
