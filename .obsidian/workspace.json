@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VSCode.md"
+                "file": "Git.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "54ff0f74ac7be44b",
   "lastOpenFiles": [
-    "IntelliJ.md",
     "VSCode.md",
+    "IntelliJ.md",
     "Git.md",
     "Servidor/2-Steams y Lamdbas.md",
     "Sin nombre",
