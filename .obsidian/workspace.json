@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "519de655a44db4ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7c321d767e79770",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54ff0f74ac7be44b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VSCode.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e82d788e4eced699",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b11aceb347f310d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ff326b26f8bbaca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5c8755d90fe3bde6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e659f4f77cc4f360",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d4eaeca9bcf5b249",
+    "type": "split",
+    "children": [
+      {
+        "id": "c733c0729a6bb4fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4db1411cc2efcba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "VSCode.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ec4242bbf5a7540",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "VSCode.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68dc1e0c3b9cc0de",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9bec2e6d8fd3e2a0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "VSCode.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "54ff0f74ac7be44b",
+  "lastOpenFiles": [
+    "IntelliJ.md",
+    "VSCode.md",
+    "Git.md",
+    "Servidor/2-Steams y Lamdbas.md",
+    "Sin nombre",
+    "Servidor/1-Anotaciones.md",
+    "Cliente/7-expresiones regulares.md",
+    "Cliente/6-String.md",
+    "Cliente/4-Arrays, rest, spread....md",
+    "Cliente/3-Tabla Falsy.md",
+    "Cliente/2-Bucles etc.md",
+    "Cliente/1-Funciones.md",
+    "Cliente",
+    "Servidor",
+    "Lista Tareas.md",
+    "Bienvenido.md"
+  ]
+}
