@@ -1,0 +1,11 @@
+- Nuevas etiquetas que controla los elementos Ej:
+	- email
+	- time
+	- trl
+	- range
+	- search
+	- date 
+- Los patrones se controlan con el atributo pattern: 
+	-  pattern="\[0-9\]" -> solo números
+	- pattern = \[0-9\]{5} -> cinco numeros
+	-
