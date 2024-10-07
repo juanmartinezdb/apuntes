@@ -1,4 +1,19 @@
-## 4.1 filter
+## Índice
+
+- [filter](#4.1-filter): Filtra elementos de un stream que cumplen una condición específica.
+- [sorted](#4.2-sorted): Ordena los elementos de un stream.
+- [distinct](#4.3-distinct): Elimina elementos duplicados de un stream.
+- [takeWhile (Java 9)](#4.4-takewhile-java-9): Toma elementos del stream hasta que un predicado deje de cumplirse.
+- [dropWhile (Java 9)](#4.5-dropwhile-java-9): Descarta elementos del stream hasta que un predicado deje de cumplirse.
+- [limit](#4.6-limit): Limita el número de elementos obtenidos de un stream.
+- [skip](#4.7-skip): Descarta un número específico de elementos del stream.
+- [map](#4.8-map): Transforma elementos de un stream.
+- [flatMap](#4.9-flatmap): Aplana estructuras complejas en un único stream.
+- [allMatch, anyMatch, noneMatch](#4.10-allmatch-anymatch-nonematch): Comprueba si todos, alguno o ninguno de los elementos cumplen un predicado.
+- [findAny, findFirst](#4.11-findany-findfirst): Encuentra y devuelve un elemento opcional del stream.
+- [reduce](#4.12-Reduce): combinar los elementos de un stream en un único resultado
+## 4.1-filter
+- [Índice](#Índice)
 - **Uso de filter**: `filter()` se usa para obtener elementos de un stream que cumplen una condición específica (un **predicado**).
   - Ejemplo:
   
@@ -21,7 +36,8 @@
   System.out.println(nombresConA);  // [Ana, Juan, Lucia]
   ```
 
-## 4.2 sorted
+## 4.2-sorted
+- [Índice](#Índice)
 - **Uso de sorted**: `sorted()` se usa para ordenar los elementos de un stream.
   - Ejemplo de uso con un comparador:
   
@@ -47,7 +63,8 @@
   System.out.println(numerosOrdenadosDesc);  // [8, 5, 4, 2, 1]
   ```
 
-## 4.3 distinct
+## 4.3-distinct
+- [Índice](#Índice)
 - **Uso de distinct**: `distinct()` se usa para eliminar duplicados en un stream.
   - Ejemplo:
   
@@ -68,7 +85,8 @@
   System.out.println(palabrasUnicas);  // [hola, mundo, java]
   ```
 
-## 4.4 takeWhile (Java 9)
+## 4.4-takeWhile-Java 9
+- [Índice](#Índice)
 - **Uso de takeWhile**: `takeWhile()` se usa para tomar elementos de un stream hasta que un predicado deje de cumplirse.
   - Ejemplo:
   
@@ -89,7 +107,8 @@
   System.out.println(hastaC);  // [Ana]
   ```
 
-## 4.5 dropWhile (Java 9)
+## 4.5-dropWhile-Java 9
+- [Índice](#Índice)
 - **Uso de dropWhile**: `dropWhile()` se usa para descartar elementos de un stream hasta que el predicado deje de cumplirse.
   - Ejemplo:
   
@@ -110,7 +129,8 @@
   System.out.println(desdeC);  // [Carlos, Beatriz, David]
   ```
 
-## 4.6 limit
+## 4.6-limit
+- [Índice](#Índice)
 - **Uso de limit**: `limit()` se usa para obtener un número específico de elementos de un stream.
   - Ejemplo:
   
@@ -131,7 +151,8 @@
   System.out.println(primerosDos);  // [Ana, Juan]
   ```
 
-## 4.7 skip
+## 4.7-skip
+- [Índice](#Índice)
 - **Uso de skip**: `skip()` se usa para descartar un número específico de elementos de un stream.
   - Ejemplo:
   
@@ -152,7 +173,8 @@
   System.out.println(sinLosPrimerosTres);  // [Lucia]
   ```
 
-## 4.8 map
+## 4.8-map
+- [Índice](#Índice)
 - **Uso de map**: `map()` se usa para transformar elementos de un stream.
   - Ejemplo de transformación de cadenas:
   
@@ -187,7 +209,8 @@
   System.out.println(nombresPersonas);  // [Juan, Ana, Pedro]
   ```
 
-## 4.9 flatMap
+## 4.9-flatMap
+- [Índice](#Índice)
 - **Uso de flatMap**: `flatMap()` se usa para **aplanar** estructuras complejas, como listas de listas, en un único stream.
   - Comparación con `map()`: `map()` transforma cada elemento, pero mantiene la estructura, mientras que `flatMap()` aplanará el resultado.
   - Ejemplo con arrays:
@@ -217,7 +240,8 @@
   System.out.println(numerosAplanados);  // [1, 2, 3, 4, 5, 6]
   ```
 
-## 4.10 allMatch, anyMatch, noneMatch
+## 4.10-allMatch-anyMatch-noneMatch
+- [Índice](#Índice)
 - **Uso de allMatch, anyMatch, noneMatch** para comprobar condiciones en los elementos de un stream.
   - **allMatch()**: Comprueba si **todos** los elementos cumplen un predicado.
   
@@ -245,7 +269,8 @@
   System.out.println(hayPedro);  // true
   ```
 
-## 4.11 findAny, findFirst
+## 4.11-findAny-findFirst
+- [Índice](#Índice)
 - **Uso de findAny y findFirst** para obtener un elemento opcional de un stream.
   - **findFirst()**: Obtiene el **primer** elemento del stream.
   
@@ -267,7 +292,8 @@
   elementoParalelo.ifPresent(System.out::println);  // Resultado no predecible
   ```
 
-## 4.12 reduce
+## 4.12-reduce
+- [Índice](#Índice)
 - **Uso de reduce**: `reduce()` se usa para combinar los elementos de un stream en un único resultado.
 
 ### 4.12.1 reduce con Valor Inicial
@@ -293,6 +319,7 @@
   ```
 
 ### 4.12.2 reduce sin Valor Inicial
+- [Índice](#Índice)
 - **Reduce sin valor inicial**: En este caso, `reduce()` devuelve un `Optional<T>` para manejar la posibilidad de un stream vacío.
   
   ```java
@@ -307,6 +334,7 @@
   ```
 
 ### 4.12.3 reduce a Max y Min
+- [Índice](#Índice)
 - **Uso de reduce para encontrar el máximo y mínimo**:
   - Ejemplo de máximo:
   
