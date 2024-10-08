@@ -1,6 +1,6 @@
 ## Índice
 
-- [filter](#4.1-filter): Filtra elementos de un stream que cumplen una condición específica.
+- [filter](#4.1%20filter) Filtra elementos de un stream que cumplen una condición específica.
 - [sorted](#4.2-sorted): Ordena los elementos de un stream.
 - [distinct](#4.3-distinct): Elimina elementos duplicados de un stream.
 - [takeWhile (Java 9)](#4.4-takewhile-java-9): Toma elementos del stream hasta que un predicado deje de cumplirse.
@@ -12,7 +12,7 @@
 - [allMatch, anyMatch, noneMatch](#4.10-allmatch-anymatch-nonematch): Comprueba si todos, alguno o ninguno de los elementos cumplen un predicado.
 - [findAny, findFirst](#4.11-findany-findfirst): Encuentra y devuelve un elemento opcional del stream.
 - [reduce](#4.12-Reduce): combinar los elementos de un stream en un único resultado
-## 4.1-filter
+## 4.1 filter
 - [Índice](#Índice)
 - **Uso de filter**: `filter()` se usa para obtener elementos de un stream que cumplen una condición específica (un **predicado**).
   - Ejemplo:
