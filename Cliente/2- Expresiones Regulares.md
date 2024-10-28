@@ -32,23 +32,29 @@ En JavaScript, las **expresiones regulares** (RegExp) son patrones utilizados pa
 
 - **`^`**: Coincide con el **inicio** de la cadena o línea (si se usa el modificador `m`).
   - **Ejemplo**: `/^Hola/` coincide si la cadena comienza con 'Hola'.
+  - [no confundir con el otro ^ que va dentro de \[\]]
 - **`$`**: Coincide con el **final** de la cadena o línea.
   - **Ejemplo**: `/adiós$/` coincide si la cadena termina con 'adiós'.
 
 ## 4. Cuantificadores
 
 - **`*`**: Coincide con el elemento anterior **cero o más veces**.
-  - **Ejemplo**: `/ho*/` coincide con 'h', 'ho', 'hoo', etc.
+	   **Ejemplo**: `/ho*/` coincide con 'h', 'ho', 'hoo', etc.
+  
 - **`+`**: Coincide con el elemento anterior **una o más veces**.
-  - **Ejemplo**: `/ho+/` coincide con 'ho', 'hoo', pero no con 'h'.
+	   **Ejemplo**: `/ho+/` coincide con 'ho', 'hoo', pero no con 'h'.
+  
 - **`?`**: Coincide con el elemento anterior **cero o una vez**.
-  - **Ejemplo**: `/colou?r/` coincide con 'color' y 'colour'.
+	   **Ejemplo**: `/colou?r/` coincide con 'color' y 'colour'.
+  
 - **`{n}`**: Coincide con exactamente **n** repeticiones del elemento anterior.
-  - **Ejemplo**: `/\d{3}/` coincide con exactamente tres dígitos.
+	   **Ejemplo**: `/\d{3}/` coincide con exactamente tres dígitos.
+  
 - **`{n,}`**: Coincide con **n o más** repeticiones.
-  - **Ejemplo**: `/\d{2,}/` coincide con dos o más dígitos.
+	  -**Ejemplo**: `/\d{2,}/` coincide con dos o más dígitos.
+  
 - **`{n,m}`**: Coincide con al menos **n** y como máximo **m** repeticiones.
-  - **Ejemplo**: `/\d{2,4}/` coincide con dos, tres o cuatro dígitos.
+	   **Ejemplo**: `/\d{2,4}/` coincide con dos, tres o cuatro dígitos.
 
 ## 5. Grupos y referencias
 
