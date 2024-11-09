@@ -1,26 +1,25 @@
 # Guía de CSS - Apuntes y Glosario
 
 ## Índice
-1. [Inserción de Estilos](#inserción-de-estilos)
-2. [Estilos mediante Atributos](#estilos-mediante-atributos)
+1. [Inserción de Estilos](#inserción%20de%20estilos)
+2. [Estilos mediante Atributos](#estilos%20mediante%20atributos)
 3. [Pseudo-clases](#pseudo-clases)
-4. [Selectores de Atributos](#selectores-de-atributos)
-5. [Aplicación de Estilos y Preferencia](#aplicación-de-estilos-y-preferencia)
-6. [Colores y Transparencia](#colores-y-transparencia)
-1. [Modelo de Caja](#modelo-de-caja)
-2. [Maquetación con `<div>` y Estilos](#maquetación-con-div-y-estilos)
-3. [Contenedores Flexibles](#contenedores-flexibles)
-4. [Variables CSS o Propiedades Personalizadas](#variables-css-o-propiedades-personalizadas)
-5. [Efectos CSS3](#efectos-css3)
-6. [Columnas y Tipografía](#columnas-y-tipografía)
-7. [Estilos en Listas](#estilos-en-listas)
-8. [Formularios y Estilos](#formularios-y-estilos)
-
+4. [Selectores de Atributos](#selectores%20de%20atributos)
+5. [Aplicación de Estilos y Preferencia](#aplicación%20de%20estilos%20y%20preferencia)
+6. [Colores y Transparencia](#colores%20y%20transparencia)
+7. [Columnas y Tipografía](#columnas%20y%20tipografía)
+8. [Estilos en Listas](#estilos%20en%20listas)
+9. [Modelo de Caja](#modelo%20de%20caja)
+10. [Maquetación con `<div>` y Estilos](#maquetación%20con%20%3Cdiv%3E%20y%20estilos)
+11. [Formularios y Estilos](#formularios%20y%20estilos)
+12. [Contenedores Flexibles](#contenedores%20flexibles)
+13. [Variables CSS o Propiedades Personalizadas](#variables%20css%20o%20propiedades%20personalizadas)
+14. [Efectos CSS3](#efectos%20css3)
 
 ---
 
 ## Inserción de Estilos
-
+[Back](#Índice)
 ### Tipos de Inserción de Estilos en HTML
 
 1. **Estilos Internos (`<style>`)**
@@ -48,7 +47,7 @@
    ```
 
 ## Estilos mediante Atributos
-
+[Back](#Índice)
 ### Uso de `class` y `id` en los Estilos
 
 - **`class`**: Permite aplicar el mismo estilo a múltiples elementos. Se define usando un punto (`.`) seguido del nombre de la clase.
@@ -74,7 +73,7 @@
   ```
 
 ## Pseudo-clases
-
+[Back](#Índice)
 Las pseudo-clases permiten aplicar estilos a elementos en función de su estado. A continuación se enumeran algunas de las más comunes:
 
 - **Pseudo-clases de enlaces**
@@ -116,7 +115,7 @@ Las pseudo-clases permiten aplicar estilos a elementos en función de su estado.
   - `:not(selector)` - Selecciona los elementos que no cumplen la condición especificada.
 
 ## Selectores de Atributos
-
+[Back](#Índice)
 Es posible aplicar estilos a elementos en función de sus atributos.
 
 - **Selectores de Atributo Básicos**
@@ -141,7 +140,7 @@ Es posible aplicar estilos a elementos en función de sus atributos.
   ```
 
 ## Aplicación de Estilos y Preferencia
-
+[Back](#Índice)
 ### Combinación de Estilos
 Cuando se aplican los mismos estilos a varios elementos, se pueden separar por comas.
 ```css
@@ -164,7 +163,7 @@ p {
 ```
 
 ## Colores y Transparencia
-
+[Back](#Índice)
 CSS permite definir colores de diferentes maneras:
 
 - **Colores en Inglés**
@@ -189,7 +188,7 @@ CSS permite definir colores de diferentes maneras:
 ---
 
 ## Columnas y Tipografía
-
+[Back](#Índice)
 ### Columnas
 
 CSS permite la creación de columnas para organizar el contenido de manera más legible. Las siguientes propiedades ayudan a crear columnas de forma eficiente:
@@ -224,7 +223,7 @@ En CSS, se pueden definir fuentes utilizando `@font-face` para importar fuentes 
   ```
 
 ## Estilos en Listas
-
+[Back](#Índice)
 Las listas pueden ser estilizadas de diferentes maneras, tanto ordenadas como desordenadas:
 
 ### Selección de Listas y Elementos de Lista
@@ -258,7 +257,7 @@ ul {
 ```
 
 ## Modelo de Caja
-
+[Back](#Índice)
 El modelo de caja en CSS define cómo se calculan las dimensiones de un elemento. Cada elemento de la página se considera una "caja" que tiene las siguientes áreas:
 
 - **Contenido**: El área donde se muestra el contenido del elemento.
@@ -312,7 +311,7 @@ El modelo de caja en CSS define cómo se calculan las dimensiones de un elemento
 ---
 
 ## Maquetación con `<div>` y Estilos
-
+[Back](#Índice)
 La etiqueta `<div>` se utiliza para dividir la página web en secciones, permitiendo aplicar estilos específicos a cada una. Su comportamiento por defecto es ocupar todo el ancho disponible, lo cual permite una fácil maquetación del contenido.
 
 ### Propiedades de Posicionamiento
@@ -389,7 +388,7 @@ Las listas se pueden utilizar para estructurar contenido de manera similar a las
 ```
 
 ## Formularios y Estilos
-
+[Back](#Índice)
 ### Atributos y Agrupación de Formularios
 - **`legend`**: Proporciona un título a un grupo de campos dentro de un formulario, mejorando la accesibilidad.
 - **`fieldset`**: Agrupa los elementos de un formulario visualmente y lógicamente.
@@ -438,7 +437,7 @@ Las listas se pueden utilizar para estructurar contenido de manera similar a las
   }
   ```
 ## Contenedores Flexibles
-
+[Back](#Índice)
 Flexbox es una herramienta poderosa para crear layouts flexibles y alineados de manera consistente.
 
 ### Contenedor Flex
@@ -522,7 +521,7 @@ Flexbox es una herramienta poderosa para crear layouts flexibles y alineados de 
   ```
 
 ## Variables CSS o Propiedades Personalizadas
-
+[Back](#Índice)
 Las variables CSS permiten definir valores reutilizables en tu hoja de estilos.
 
 - **Definición**: Se definen con `--` y generalmente se colocan en `:root` para estar disponibles globalmente.
@@ -542,7 +541,7 @@ Las variables CSS permiten definir valores reutilizables en tu hoja de estilos.
   ```
 
 ## Efectos CSS3
-
+[Back](#Índice)
 ### Sombras
 - **Sombras de Texto (`text-shadow`)**: Añade sombras al texto.
   ```css
