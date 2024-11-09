@@ -7,17 +7,19 @@ Esta guía está organizada desde lo más básico hasta elementos más avanzados
 2. [Etiquetas de texto](#etiquetas%20de%20texto)
 3. [Enlaces e imágenes](#enlaces%20e%20im%C3%A1genes)
 4. [Formularios y campos de formulario](#formularios%20y%20campos%20de%20formulario)
-5. [Multimedia](#multimedia)
-6. [Elementos semánticos](#elementos%20sem%C3%A1nticos)
-7. [Etiquetas de contenido](#etiquetas%20de%20contenido)
-8. [Etiquetas de formulario adicionales](#etiquetas%20de%20formulario%20adicionales)
-9. [Tablas](#tablas)
-10. [Contenido incrustado](#contenido%20incrustado)
+5. [Atributos Inputs](#Atributos%20Inputs)
+6. [Multimedia](#multimedia)
+7. [Elementos semánticos](#elementos%20sem%C3%A1nticos)
+8. [Etiquetas de contenido](#etiquetas%20de%20contenido)
+9. [Etiquetas de formulario adicionales](#etiquetas%20de%20formulario%20adicionales)
+10. [Tablas](#tablas)
+11. [Contenido incrustado](#contenido%20incrustado)
+12. [Marcadores](#Marcadores)
 
 ---
 
 ## Etiquetas básicas de estructura
-
+[back](#Índice)
 ### `<html>`
 Define el documento como HTML.
 ```html
@@ -73,7 +75,7 @@ Algunas etiquetas no necesitan etiqueta de cierre:
 ---
 
 ## Etiquetas de texto
-
+[back](#Índice)
 ### `<h1>` - `<h6>`
 Etiquetas de encabezado, `<h1>` es el título más importante y `<h6>` el menos.
 ```html
@@ -98,13 +100,19 @@ Define un párrafo.
 **`<ul>`**: Lista desordenada. 
 **`<ol>`**: Lista ordenada. 
 **`<li>`**: Elemento de lista.
+**Atributos de `<ol>`**:
+- `type`: Especifica el tipo de marcador (`1`, `A`, `a`, `I`, `i`).
+- `start`: Define desde qué número o letra comienza la lista.
+- `reversed`: Invierte el orden de la lista.
+**Atributos de `<ul>`**:
+- `type`: Define el tipo de marcador (`disc`, `circle`, `square`).
 ```html
 <ul>
   <li>Elemento uno</li>
   <li>Elemento dos</li>
 </ul>
 
-<ol>
+<ol type="A" start="3" reversed>
   <li>Primero</li>
   <li>Segundo</li>
 </ol>
@@ -155,11 +163,10 @@ Muestra texto con espacios y saltos de línea tal y como se escriben.
 <p>Variable: <var>x</var></p>
 <p>H<sub>2</sub>O y E=mc<sup>2</sup></p>
 ```
-
 ---
 
 ## Enlaces e imágenes
-
+[back](#Índice)
 ### `<a>`
 Define un enlace. 
 **Atributos**:
@@ -183,7 +190,7 @@ Inserta una imagen.
 ---
 
 ## Formularios y campos de formulario
-
+[back](#Índice)
 ### `<form>`
 Define un formulario HTML.
 **Atributos**:
@@ -249,11 +256,119 @@ Define una lista desplegable.
   <input type="number" id="edad" name="edad">
 </fieldset>
 ```
+### `<button>`
+Botón que permite enviar contenido HTML adicional.
+**Atributos**:
+- `type`: Define el tipo de botón (`submit`, `reset`, `button`).
+```html
+<button type="submit">Enviar</button>
+<button type="reset">Restablecer</button>
+```
+
+### `<label>`
+Asocia un campo de formulario con una etiqueta descriptiva.
+**Atributo**:
+- `for`: Identificador del campo al que hace referencia.
+```html
+<label for="email">Correo electrónico:</label>
+<input type="email" id="email" name="email">
+```
+
+### `<datalist>`
+Proporciona una lista de opciones sugeridas para un campo `<input>`.
+```html
+<label for="navegador">Elige un navegador:</label>
+<input list="navegadores" id="navegador" name="navegador">
+<datalist id="navegadores">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Safari">
+  <option value="Edge">
+</datalist>
+```
 
 ---
+## Atributos Inputs
+[back](#Índice)
+La etiqueta `<input>` se utiliza para crear controles interactivos que reciben datos del usuario. A continuación, se listan los atributos más comunes de `<input>` y sus usos.
 
+### Atributos comunes de `<input>`
+
+- **`type`**: Define el tipo de entrada que se espera en el campo. Los tipos más comunes son:
+  - `text`: Entrada de texto estándar.
+  - `password`: Entrada de texto enmascarado (oculto, típico para contraseñas).
+  - `email`: Campo para una dirección de correo electrónico.
+  - `checkbox`: Casilla de verificación.
+  - `radio`: Botón de selección única dentro de un grupo.
+  - `button`: Botón simple que puede ejecutar JavaScript (`onclick`).
+  - `number`: Campo para entrada de números (con atributos `min` y `max`).
+  - `submit`: Botón para enviar el formulario.
+  - `image`: Botón de envío que utiliza una imagen como visual.
+  - `reset`: Botón para restablecer los campos del formulario.
+  - `color`, `date`, `file`, `month`, `range`, `search`, `tel`, `time`, `url`, `week`: Campos especializados según el tipo de dato que se necesita.
+
+- **`list`**: Especifica el identificador de una lista de sugerencias, definida con `<datalist>`, que el usuario puede elegir mientras escribe.
+  ```html
+  <input list="frutas" id="fruta" name="fruta">
+  <datalist id="frutas">
+    <option value="Manzana">
+    <option value="Banana">
+    <option value="Naranja">
+  </datalist>
+  ```
+
+- **`value`**: Valor predeterminado del campo.
+
+- **`readonly`**: Indica que el campo no puede ser modificado por el usuario, pero se puede seleccionar.
+
+- **`disabled`**: El campo está deshabilitado, no puede ser modificado ni seleccionado.
+
+- **`size`**: Número de caracteres que se muestran en el campo de texto (solo para tipos como `text`).
+
+- **`maxlength`**: Número máximo de caracteres que se permite en el campo.
+
+- **`min` / `max`**: Define el valor mínimo y máximo permitidos, aplicable para tipos como `number`, `date`, etc.
+
+- **`step`**: Define el incremento permitido entre los valores válidos para tipos numéricos y `range`. Por ejemplo, `step="2"` incrementa de 2 en 2.
+
+- **`pattern`**: Permite definir una expresión regular que valida el formato de los datos introducidos.
+  ```html
+  <input type="text" pattern="[a-z]{1,5}" placeholder="Entre 1 y 5 letras">
+  ```
+
+- **`placeholder`**: Texto de sugerencia que se muestra mientras el campo está vacío, indicando el tipo de datos que se espera.
+
+- **`required`**: Indica que el campo debe completarse antes de enviar el formulario.
+
+- **`autofocus`**: Indica que el campo debe recibir el enfoque automáticamente cuando se carga la página.
+
+### Ejemplos de Campos con `<input>`
+
+- **Campo de texto con valor predeterminado y longitud máxima**
+  ```html
+  <input type="text" name="usuario" value="Juan123" maxlength="10">
+  ```
+
+- **Campo numérico con límites y pasos definidos**
+  ```html
+  <input type="number" name="edad" min="18" max="100" step="1">
+  ```
+
+- **Casilla de verificación deshabilitada**
+  ```html
+  <input type="checkbox" name="suscripcion" disabled>
+  ```
+
+- **Campo de correo electrónico requerido con sugerencia**
+  ```html
+  <input type="email" name="correo" placeholder="tucorreo@example.com" required>
+  ```
+
+Estos atributos permiten crear campos de entrada más precisos y adecuados a las necesidades específicas del formulario, mejorando tanto la experiencia de usuario como la calidad de los datos recolectados.
+
+---
 ## Multimedia
-
+[back](#Índice)
 ### `<audio>`
 Define contenido de audio.
 **Atributos**:
@@ -290,7 +405,7 @@ Define contenido de video.
 ---
 
 ## Elementos semánticos
-
+[back](#Índice)
 ### `<header>`
 Define un encabezado para un documento o sección.
 ```html
@@ -372,7 +487,7 @@ Define una fecha u hora específica.
 ---
 
 ## Etiquetas de contenido
-
+[back](#Índice)
 ### `<hr>`
 Cambio temático entre párrafos, se muestra como una línea horizontal.
 ```html
@@ -383,56 +498,51 @@ Cambio temático entre párrafos, se muestra como una línea horizontal.
 
 ### `<div>`
 Contenedor genérico sin ningún significado especial. Utilizado para aplicar estilos con CSS o manipular elementos con JavaScript.
+**Atributos**:
+- `id`: Identificador único del elemento.
+- `class`: Agrupa varios elementos con el mismo estilo CSS.
 ```html
 <div class="contenedor">
   <p>Contenido dentro del div.</p>
 </div>
 ```
 
----
-
-## Etiquetas de formulario adicionales
-
-### `<button>`
-Botón que permite enviar contenido HTML adicional.
-**Atributos**:
-- `type`: Define el tipo de botón (`submit`, `reset`, `button`).
+### `<dl>`, `<dt>`, `<dd>`
+Define una lista de términos y sus definiciones.
+- **`<dl>`**: Lista de definiciones.
+- **`<dt>`**: Término que va a ser definido.
+- **`<dd>`**: Definición del término anterior.
 ```html
-<button type="submit">Enviar</button>
-<button type="reset">Restablecer</button>
+<dl>
+  <dt>HTML</dt>
+  <dd>Lenguaje de marcado para la creación de páginas web.</dd>
+  <dt>CSS</dt>
+  <dd>Lenguaje de estilos para definir la presentación de documentos HTML.</dd>
+</dl>
 ```
 
-### `<label>`
-Asocia un campo de formulario con una etiqueta descriptiva.
-**Atributo**:
-- `for`: Identificador del campo al que hace referencia.
+### `<details>` y `<summary>`
+Muestra información adicional que se puede expandir o colapsar.
+- **`<details>`**: Contiene la información que se puede mostrar u ocultar.
+- **`<summary>`**: Título visible para el contenido que se puede desplegar.
 ```html
-<label for="email">Correo electrónico:</label>
-<input type="email" id="email" name="email">
+<details>
+  <summary>Más información</summary>
+  <p>Este es el contenido adicional que se muestra al hacer clic.</p>
+</details>
 ```
 
-### `<datalist>`
-Proporciona una lista de opciones sugeridas para un campo `<input>`.
-```html
-<label for="navegador">Elige un navegador:</label>
-<input list="navegadores" id="navegador" name="navegador">
-<datalist id="navegadores">
-  <option value="Chrome">
-  <option value="Firefox">
-  <option value="Safari">
-  <option value="Edge">
-</datalist>
-```
 
 ---
 
 ## Tablas
-
+[back](#Índice)
 ### `<table>`
 Define una tabla.
 - **`<tr>`**: Fila de la tabla.
 - **`<th>`**: Celda de encabezado.
 - **`<td>`**: Celda de datos.
+- -**`<caption>`**: Titulo de la tabla.
 ```html
 <table>
   <caption>Ejemplo de tabla</caption>
@@ -450,7 +560,7 @@ Define una tabla.
 ---
 
 ## Contenido incrustado
-
+[back](#Índice)
 ### `<iframe>`
 Representa un contexto anidado de navegación.
 ```html
@@ -475,4 +585,29 @@ Permite incrustar contenido externo.
 </svg>
 ```
 
-Espero que estos apuntes complementados te sigan siendo útiles y prácticos. ¡Dime si necesitas ampliar o ajustar algo más!
+## Marcadores
+[back](#Índice)
+Los marcadores se usan para acceder a otra web o para navegar fácilmente dentro de una página muy grande, permitiendo acceder a distintas zonas de la web de manera más sencilla.
+
+### Marcadores dentro de la misma página
+Para crear marcadores dentro de la misma página, puedes utilizar el atributo `name` en una etiqueta `<a>` o un `id` en cualquier elemento. Luego, puedes crear un enlace que apunte a ese marcador:
+
+```html
+<a name="nombre_marcador"></a>
+<a href="#nombre_marcador">Ir al título</a>
+```
+
+Otra forma moderna es usar el atributo `id`:
+```html
+<h2 id="seccion1">Título de la Sección</h2>
+<a href="#seccion1">Ir al Título de la Sección</a>
+```
+
+### Marcadores que enlazan a otra página
+También puedes enlazar a una sección específica de otra página usando un marcador:
+
+```html
+<a href="nombrepagina.html#nombremarcador">Ir a marcador en otra página</a>
+```
+
+Esto permite que al hacer clic en el enlace, el navegador dirija al usuario directamente a la parte específica de la página indicada.
