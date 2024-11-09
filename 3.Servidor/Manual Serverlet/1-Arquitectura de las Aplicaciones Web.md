@@ -61,4 +61,4 @@ Además, las arquitecturas orientadas a eventos (**Event-Driven Architecture**) 
 
 El diseño en capas sigue siendo una piedra angular en el desarrollo de aplicaciones modernas, proporcionando una clara separación de responsabilidades y facilitando el desarrollo y mantenimiento. La evolución hacia microservicios y arquitecturas orientadas a eventos permite abordar mejor los retos de escalabilidad y complejidad inherentes a las aplicaciones empresariales modernas, manteniendo la estructura y los principios básicos de la arquitectura en capas.
 
-En el próximo bloque, podemos adentrarnos en más detalle en alguna de estas capas o explorar patrones y tecnologías específicas de la programación basada en servidores. Tú me dices por dónde seguimos.
+En el próximo bloque, podemos adentrarnos en más detalle en alguna de estas capas o explorar patrones y tecnologías específicas de la programación basada en servidores.
