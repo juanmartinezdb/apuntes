@@ -204,6 +204,7 @@ No es necesario colocar un punto y coma al final de la expresión. El contenedor
 
 ### Declaraciones
 
+[!NOTA]-Las declaraciones se quedan guardadas en cache!
 Las **declaraciones** se usan para definir variables y métodos que estarán disponibles en la página JSP. Se encierran entre `<%!` y `%>`.
 
 ```jsp
